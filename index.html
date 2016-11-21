@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+      function showMenuItems() {
+        var menu = document.querySelector(".nav-links");
+        if (document.body.clientWidth < 959) {
+          if (menu.style.visibility == "hidden") {
+            menu.style.visibility ="visible";
+        } else {
+            menu.style.visibility = "hidden";
+          }
+        }
+      }
+    </script>
+    
+    <script>      
+      $(window).resize(function(){
+
+        if ( $(window).width() > 960 ) {
+          $(document).ready(function(){
+            document.querySelector(".nav-links").style.visibility = "visible";
+          });
+        }
+        if ( $(window).width() < 959 ) {
+          $(document).ready(function() {
+            document.querySelector(".nav-links").style.visibility = "hidden";
+          });
+        }
+      });
+              
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">My Website</div>
+    </div>
+    <div class="nav-bar">
+      <ul class="navbar-links">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ALL POSTS</a></li>
+      <li><a href="#">ABOUT US</a></li>
+
+
+      </ul>
+    </div>
+  </body>
+</html>
