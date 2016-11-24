@@ -167,6 +167,8 @@
     font-size: 0.75rem;
     display: inline;
     margin: auto;
+    text-align: center;
+    margin-left: 15px;
   }
   
   .subtitle hr {
@@ -174,7 +176,76 @@
     width: 20px;
     padding: 0px 10px 0px 10px;
     vertical-align: middle;
+    margin: auto;
   }
+  
+/*   set media query @ 860px to fix issue with hr scaling */
+  
+  .comment-form {
+    display: block;
+    text-align: right;
+    font-size: 0.75rem;
+    margin-right: 50px;
+    padding-right: 0px;
+  }
+  
+  .comment-form input {
+    font-size: 1.05rem;
+    width: 60%;
+    height: 25px;
+    margin: 5px;
+    text-align: left;
+    box-shadow: inset 0 0.025px 0.05px black;
+  }
+    
+    #comment-text-area {
+        width: 90%;
+        margin: 25px;
+    }
+    
+    .center {
+        margin: auto;
+        width: 90%;
+    }
+    
+    .top {
+        vertical-align: top;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .submit-button {
+        margin-left: 25px;
+        margin-bottom: 25px;
+        background-color: red;
+        color: white;
+        border-style: none;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    
+    .comment-feed {
+        display: inline-block;
+        margin-right: 25px;
+        overflow: hidden;
+    }
+    
+    .comment p {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    
+    .comment-date {
+        color: darkgray;
+        font-size: 0.75rem;
+    }
+    
+    .comment-response-feed {
+        margin-left: 50px;
+        margin-bottom: 25px;
+        border-left: solid lightgray 1px;
+        padding-left: 5px;
+    }
 }
 
 
